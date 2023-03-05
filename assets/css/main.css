@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 62.5%; }
+
+body {
+  font-size: 2rem;
+  background: #0d192b; }
+
+.container {
+  background: #14253d;
+  width: 40rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2.5rem;
+  border-radius: 1rem; }
+  .container__img {
+    position: relative; }
+    .container__img::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../images/icon-view.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 20%;
+      transition: all 0.3s;
+      z-index: 2;
+      opacity: 0; }
+    .container__img::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: .2rem;
+      background-size: 20%;
+      background-color: #00fff7;
+      transition: all 0.3s;
+      z-index: 1;
+      opacity: 0;
+      border-radius: 1rem; }
+    .container__img:hover::before {
+      opacity: 1; }
+    .container__img:hover::after {
+      opacity: 0.6; }
+    .container__img img {
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%; }
+  .container__des {
+    margin-top: 2rem; }
+    .container__des h2 {
+      color: white;
+      margin: 1rem 0; }
+    .container__des p {
+      color: #8bacda;
+      margin: 1rem 0;
+      font-weight: 300; }
+  .container__times {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .container__times .left {
+      color: #00fff7;
+      font-size: 1.8rem;
+      font-weight: 600; }
+    .container__times .right {
+      color: #8bacda;
+      margin: 1rem 0;
+      font-size: 1.8rem;
+      font-weight: 300; }
+  .container__profiles {
+    display: inline-flex;
+    align-items: center;
+    color: #8bacda;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    border-top: 0.1rem solid #2f415b;
+    width: 100%; }
+    .container__profiles img {
+      width: 3rem;
+      border: 0.1rem solid white;
+      border-radius: 100%;
+      margin-right: 2rem; }
+    .container__profiles span {
+      color: white; }
+
+i {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 1rem; }
+  i.icon-clock {
+    background-image: url("../../images/icon-clock.svg");
+    width: 2rem;
+    height: 2rem; }
+  i.icon-ethereum {
+    background-image: url("../../images/icon-ethereum.svg");
+    width: 2rem;
+    height: 2rem; }
+  i.icon-view {
+    background-image: url("../../images/icon-view.svg");
+    width: 2rem;
+    height: 2rem; }
